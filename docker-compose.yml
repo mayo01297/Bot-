@@ -1,0 +1,6 @@
+services:
+  translate-bot:
+    build: .
+    restart: unless-stopped
+    environment:
+      - DISCORD_TOKEN=${DISCORD_TOKEN}
